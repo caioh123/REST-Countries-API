@@ -3,8 +3,8 @@ import { theme } from '../../static/theme';
 
 export const Container = styled.div`
   width: 100%;
-  display: 
-5
+  display: flex;
+
   justify-content: space-between;
   background-color: ${theme.pallete.background.all};
 
