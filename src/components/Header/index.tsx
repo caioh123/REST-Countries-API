@@ -3,7 +3,7 @@ import { Container } from "./styles"
 export function Header() {
   return (
     <Container>
-      oi
+      <p>Where in the world?</p>
     </Container>
   )
 }
