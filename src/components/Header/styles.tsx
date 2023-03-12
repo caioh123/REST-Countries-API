@@ -36,7 +36,7 @@ export const Container = styled.div`
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: normal;
     }
   }
