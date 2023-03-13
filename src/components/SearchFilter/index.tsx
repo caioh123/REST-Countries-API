@@ -2,7 +2,7 @@ import { Container } from './styles';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { theme } from '../../static/theme';
 
-export function SearchInput() {
+export function SearchFilter() {
   return (
     <Container>
       <div>
@@ -11,8 +11,11 @@ export function SearchInput() {
           color={theme.pallete.icon}
           style={{ backgroundColor: theme.pallete.white }}
         />
-        <input type='text' placeholder='Search for a country...' />
+        <input type='text' placeholder='Search' />
       </div>
+      <select id='cars'>
+        <option value='volvo'>Filter by region</option>
+      </select>
     </Container>
   );
 }
