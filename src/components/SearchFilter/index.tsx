@@ -14,7 +14,7 @@ export function SearchFilter() {
         <input type='text' placeholder='Search' />
       </div>
       <select id='cars'>
-        <option value='volvo'>Filter by region</option>
+        <option value='volvo'>Filter by Region</option>
       </select>
     </Container>
   );
