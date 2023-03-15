@@ -6,7 +6,3 @@ export interface Country {
   region: string;
   capital: string[];
 }
-
-export interface Countries {
-  countries: Country[];
-}
