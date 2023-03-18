@@ -1,18 +1,24 @@
 import { Container } from './styles';
-export function CountryCard() {
+import { Country } from '../../types/country.types';
+
+export function CountryCard({
+  name,
+  population,
+  region,
+  capital,
+  flags,
+}: Country) {
+  console.log('esse é o data', region);
   return (
     <Container>
-      <img
-        src='https://res.cloudinary.com/stealthman22/image/upload/v1586308024/new-portfolio/hero/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg'
-        alt=''
-      />
-      <h3>Alemanha</h3>
+      <img src={flags.png} alt='' />
+      <h3>{name.official}</h3>
       <strong>Population</strong>
-      <p>12.000.000</p>
+      <p>{population}</p>
       <strong>Region</strong>
-      <p>Europe</p>
+      <p>{region}</p>
       <strong>Capital</strong>
-      <p>Berlin</p>
+      <p>{capital}</p>
     </Container>
   );
 }

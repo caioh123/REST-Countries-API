@@ -10,7 +10,7 @@ export const Container = styled.div`
   background-color: ${theme.pallete.white};
   img {
     align-self: center;
-    width: 100%;
+    width: 400px;
   }
 
   h3 {

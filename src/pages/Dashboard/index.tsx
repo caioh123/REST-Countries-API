@@ -3,7 +3,7 @@ import { CountryCard } from '../../components/ContryCard';
 import { Header } from '../../components/Header';
 import { SearchFilter } from '../../components/SearchFilter';
 import { getCountries } from '../../services/contries.service';
-import { Country } from '../../services/country.types';
+import { Country } from '../../types/country.types';
 import { Cards } from './styles';
 
 export function Dashboard() {
@@ -19,7 +19,13 @@ export function Dashboard() {
 
       <Cards>
         {countries.map((country) => (
-          <CountryCard />
+          <CountryCard
+            name={country.name}
+            population={country.population}
+            region={country.region}
+            capital={country.capital}
+            flags={country.flags}
+          />
         ))}
       </Cards>
     </>
