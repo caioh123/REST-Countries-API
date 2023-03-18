@@ -8,7 +8,6 @@ export function CountryCard({
   capital,
   flags,
 }: Country) {
-  console.log('esse é o data', region);
   return (
     <Container>
       <img src={flags.png} alt='' />
